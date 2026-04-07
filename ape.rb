@@ -5,21 +5,21 @@
 class Ape < Formula
   desc "AWS Platform Explorer — browse EC2 files and S3 buckets from your browser"
   homepage "https://github.com/Dongckim/A.P.E"
-  version "0.3.1"
+  version "0.3.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Dongckim/A.P.E/releases/download/v0.3.1/ape-darwin-amd64.tar.gz"
-      sha256 "77956056ecb5c6566321fa119fc07db378cfe1c96f0546ee067e59b7e25bba46"
+      url "https://github.com/Dongckim/A.P.E/releases/download/v0.3.3/ape-darwin-amd64.tar.gz"
+      sha256 "27491ee9fa63acea52436372c814e08282bd956af086861972cc84e2a2184108"
 
       define_method(:install) do
         bin.install "ape"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Dongckim/A.P.E/releases/download/v0.3.1/ape-darwin-arm64.tar.gz"
-      sha256 "2b18b70189776ca5ecb5abc578dc4f711efb302a63844ebc9b70b1c5e09785bf"
+      url "https://github.com/Dongckim/A.P.E/releases/download/v0.3.3/ape-darwin-arm64.tar.gz"
+      sha256 "eecaa0e4c58feb7f6946d863048e04bf7dd5d0e6d42d35ce7deeb08c0fe794e6"
 
       define_method(:install) do
         bin.install "ape"
@@ -29,15 +29,15 @@ class Ape < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Dongckim/A.P.E/releases/download/v0.3.1/ape-linux-amd64.tar.gz"
-      sha256 "f69af5b63d1cd543a85facd1e2507def81cf0d9ddfa982f3921f7ee61fd0bdec"
+      url "https://github.com/Dongckim/A.P.E/releases/download/v0.3.3/ape-linux-amd64.tar.gz"
+      sha256 "21345668bd5431e9fedecc8bf0df206e8e8e15243224725d91f60676b0d356b0"
       define_method(:install) do
         bin.install "ape"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Dongckim/A.P.E/releases/download/v0.3.1/ape-linux-arm64.tar.gz"
-      sha256 "b46ed50da7c4f01b019b69563c9af93f1931776200f692bf8b6372ed4f601f76"
+      url "https://github.com/Dongckim/A.P.E/releases/download/v0.3.3/ape-linux-arm64.tar.gz"
+      sha256 "e9a96d26df1b5df3c65e9ba960504ce6cac82b2f8a24d5603e11800c4a7a5706"
       define_method(:install) do
         bin.install "ape"
       end
